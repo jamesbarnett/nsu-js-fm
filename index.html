@@ -2,12 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Newsletter sign-up from with success message</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="newsletter-cta">
+        <picture>
+          <source media="(min-width: 48rem)" srcset="/assets/images/illustration-sign-up-desktop.svg">
+          <img src="/assets/images/illustration-sign-up-mobile.svg" alt="">
+        </picture>
+        <div class="content">
+          <h1 class="title">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul role="list" class="checkmark-list">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form>
+            <div class="form-group with-error-field">
+              <label for="email">Email address</label>
+              <input placeholder="email@company.com" type="email" id="email">
+              <span class="error">Valid email required</span>
+            </div>
+            <button class="button">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <dialog>
+          <img src="/assets/images/icon-success.svg" alt="" width="64px" height="64px">
+          <h1>Thanks for subscribing!</h1>
+
+          <p>A confirmation email has been sent to ash@loremcompany.com.</p>
+          <p>Please open it and click the button inside to confirm your subscription.</p>
+          <form method="dialog">
+            <button autofocus class="button close">Dismiss message</button>
+          </form>
+        </dialog>
+      </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
