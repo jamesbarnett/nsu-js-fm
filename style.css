@@ -50,7 +50,6 @@ picture {
 body,
 h1,
 h2,
-h3,
 h4,
 p,
 figure,
@@ -136,7 +135,6 @@ input:not(:focus):invalid {
   border: 0;
   padding: 1rem;
   border-radius: 0.5rem;
-  /*width: 100%;*/
 }
 
 .button:hover,
@@ -193,6 +191,11 @@ form {
   display: grid;
   column-gap: 1rem;
   padding: 1.5rem;
+}
+
+.newsletter-cta p {
+  padding-block-start: 1.5rem;
+  padding-block-end: 1.5rem;
 }
 
 .newsletter-cta .title {
