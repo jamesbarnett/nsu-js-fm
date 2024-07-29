@@ -1,4 +1,4 @@
-import "./style.css";
+import "style.css";
 
 const button = document.querySelector(".content .button")
 const email = document.getElementById("email")
