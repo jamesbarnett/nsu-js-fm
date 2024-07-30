@@ -280,7 +280,6 @@ dialog {
     font-size: var(--fs-900);
     font-weight: var(--fw-bold);
     line-height: 1;
-    padding-bottom: 2rem;
   }
 
   .newsletter-cta img {
